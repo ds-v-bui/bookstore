@@ -62,11 +62,11 @@ class BooksFixture extends TestFixture
             'sale_price' => 1,
             'pages' => 1,
             'publisher' => 'Lorem ipsum dolor sit amet',
-            'publish_date' => '2017-02-20',
+            'publish_date' => '2017-02-21',
             'link_download' => 'Lorem ipsum dolor sit amet',
             'published' => 1,
-            'created' => '2017-02-20 04:02:03',
-            'modified' => '2017-02-20 04:02:03'
+            'created' => '2017-02-21 01:45:34',
+            'modified' => '2017-02-21 01:45:34'
         ],
     ];
 }

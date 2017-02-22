@@ -3,7 +3,31 @@
   * @var \App\View\AppView $this
   */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+
+    th {
+        background-color: rgb(214, 214, 214);
+        color: black;
+    }
+</style>
+</head>
+<body>
+  <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('Edit Category'), ['action' => 'edit', $category->id]) ?> </li>
@@ -15,7 +39,7 @@
     </ul>
 </nav>
 <div class="categories view large-9 medium-8 columns content">
-    <h3><?= h($category->name) ?></h3>
+    <h3 style="text-align: center;"><?= h($category->name) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Name') ?></th>
@@ -48,13 +72,13 @@
                 <th scope="col"><?= __('Title') ?></th>
                 <th scope="col"><?= __('Slug') ?></th>
                 <th scope="col"><?= __('Image') ?></th>
-                <th scope="col"><?= __('Info') ?></th>
+                <!-- <th scope="col"><?= __('Info') ?></th> -->
                 <th scope="col"><?= __('Price') ?></th>
                 <th scope="col"><?= __('Sale Price') ?></th>
                 <th scope="col"><?= __('Pages') ?></th>
                 <th scope="col"><?= __('Publisher') ?></th>
                 <th scope="col"><?= __('Publish Date') ?></th>
-                <th scope="col"><?= __('Link Download') ?></th>
+                <!-- <th scope="col"><?= __('Link Download') ?></th> -->
                 <th scope="col"><?= __('Published') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
@@ -67,13 +91,13 @@
                 <td><?= h($books->title) ?></td>
                 <td><?= h($books->slug) ?></td>
                 <td><?= h($books->image) ?></td>
-                <td><?= h($books->info) ?></td>
+                <!-- <td><?= h($books->info) ?></td> -->
                 <td><?= h($books->price) ?></td>
                 <td><?= h($books->sale_price) ?></td>
                 <td><?= h($books->pages) ?></td>
                 <td><?= h($books->publisher) ?></td>
                 <td><?= h($books->publish_date) ?></td>
-                <td><?= h($books->link_download) ?></td>
+                <!-- <td><?= h($books->link_download) ?></td> -->
                 <td><?= h($books->published) ?></td>
                 <td><?= h($books->created) ?></td>
                 <td><?= h($books->modified) ?></td>
@@ -87,4 +111,6 @@
         </table>
         <?php endif; ?>
     </div>
-</div>
+</div>  
+</body>
+</html>

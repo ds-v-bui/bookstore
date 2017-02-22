@@ -46,10 +46,10 @@ class CouponsFixture extends TestFixture
             'code' => 'Lorem ipsum dolor sit amet',
             'percent' => 1,
             'description' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-            'time_start' => '2017-02-20 04:03:16',
-            'time_end' => '2017-02-20 04:03:16',
-            'created' => '2017-02-20 04:03:16',
-            'modified' => '2017-02-20 04:03:16'
+            'time_start' => '2017-02-21 01:46:13',
+            'time_end' => '2017-02-21 01:46:13',
+            'created' => '2017-02-21 01:46:13',
+            'modified' => '2017-02-21 01:46:13'
         ],
     ];
 }

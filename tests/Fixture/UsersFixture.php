@@ -57,8 +57,8 @@ class UsersFixture extends TestFixture
             'lastname' => 'Lorem ipsum dolor sit amet',
             'address' => 'Lorem ipsum dolor sit amet',
             'phone_number' => 'Lorem ipsum',
-            'created' => '2017-02-20 04:03:43',
-            'modified' => '2017-02-20 04:03:43'
+            'created' => '2017-02-21 01:46:47',
+            'modified' => '2017-02-21 01:46:47'
         ],
     ];
 }

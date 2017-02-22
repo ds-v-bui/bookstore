@@ -3,13 +3,37 @@
   * @var \App\View\AppView $this
   */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+
+    th {
+        background-color: rgb(214, 214, 214);
+        color: white;
+    }
+</style>
+</head>
+<body>
+  <nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <!-- <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Category'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Books'), ['controller' => 'Books', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Book'), ['controller' => 'Books', 'action' => 'add']) ?></li>
-    </ul>
+    </ul> -->
 </nav>
 <div class="categories index large-9 medium-8 columns content">
     <h3><?= __('Categories') ?></h3>
@@ -49,4 +73,7 @@
         </ul>
         <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
     </div>
-</div>
+</div>  
+</body>
+</html>
+

@@ -3,7 +3,31 @@
   * @var \App\View\AppView $this
   */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+
+    th {
+        background-color: rgb(214, 214, 214);
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('Edit Book'), ['action' => 'edit', $book->id]) ?> </li>
@@ -19,7 +43,7 @@
     </ul>
 </nav>
 <div class="books view large-9 medium-8 columns content">
-    <h3><?= h($book->title) ?></h3>
+    <h3 style="text-align: center;"><?= h($book->title) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Category') ?></th>
@@ -141,3 +165,6 @@
         <?php endif; ?>
     </div>
 </div>
+
+</body>
+</html>

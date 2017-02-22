@@ -25,6 +25,9 @@ class BooksController extends AppController
 
         $this->set(compact('books'));
         $this->set('_serialize', ['books']);
+        // $books = $this->Book->latest();
+        // $this->set('books', $books);
+
     }
 
     /**

@@ -11,6 +11,9 @@
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*"
     },
+    "require": {
+        "slywalker/boost_cake": "*"
+    },
     "require-dev": {
         "psy/psysh": "@stable",
         "cakephp/debug_kit": "~3.2",
